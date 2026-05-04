@@ -51,6 +51,14 @@ html {
   margin: 0 auto;
 }
 
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-block: 10px;
+}
+
 h2 {
   font-size: 2rem;
   color: lightyellow;
@@ -68,7 +76,74 @@ h2 {
 }
 
 footer {
-  background-color: #333;
+  background-color: rgb(19, 38, 41);
   text-align: center;
   padding: 20px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-form input,
+textarea {
+  padding: 10px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  outline-color: rgb(175, 230, 240);
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.contact-form button {
+  background-color: rgb(70, 128, 123);
+  color: whitesmoke;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box-wrapper {
+  background-color: white;
+  color: darkslategray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  width: 225px;
+}
+
+.box-wrapper h3 {
+  margin-top: 0px;
+  color: slategrey;
+  text-align: center;
+}
+
+.box-wrapper li {
+  padding-left: 20px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 3;
+}
+
+.crop {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
