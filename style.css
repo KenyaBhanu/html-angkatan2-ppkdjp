@@ -4,6 +4,7 @@ html {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: cornsilk;
+  scroll-behavior: smooth;
 }
 
 .parallax {
@@ -146,4 +147,80 @@ textarea {
   width: 150px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3s;
+}
+
+.img-div img:hover {
+  transform: scale(1.075);
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgba(47, 79, 79, 0.788);
+  width: 100%;
+  height: 50px;
+}
+
+.nav-container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  transition: color 1s;
+}
+
+nav a:hover {
+  color: rgb(118, 160, 147);
+}
+
+.nav-container button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-container button {
+    text-decoration: none;
+    background-color: #00000000;
+    color: whitesmoke;
+    font-size: larger;
+    outline-style: none;
+    border: solid whitesmoke;
+    border-radius: 10px;
+    font-width: 600;
+    border-width: 2px;
+    display: block;
+    cursor: pointer;
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    width: 20%;
+    right: 0;
+    margin-top: 150px;
+    padding-block: 50px;
+    padding-inline: 25px;
+    background-color: darkslategray;
+    border-bottom-left-radius: 10%;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+
+  
 }

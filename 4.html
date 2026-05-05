@@ -9,14 +9,26 @@
 </head>
 
 <body>
-    <section class="parallax bg-1">
+    <header class="navbar">
+        <div class="nav-container">
+            <h2>My Portfolio</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>            
+        </div>
+    </header>
+    <section class="parallax bg-1" id="home">
         <div class="content">
             <h1>Halo, Saya Kenya</h1>
             <img src="assets/sponbob.jpeg" class="profile-img" alt="">
             <p>Web Programmer</p>
         </div>
     </section>
-    <section class="normal-section">
+    <section class="normal-section" id="about">
         <div class="container">
             <h2>Tentang Saya</h2>
             <p>Saya adalah ??? gatau makanya saya ikut ppkd biar nanti jadi tau</p>
@@ -28,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section class="parallax bg-2">
+    <section class="parallax bg-2" id="skills">
         <div class="content">
             <h2>Keahlian Saya</h2>
             <div class="wrapper">
@@ -51,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="normal-section">
+    <section class="normal-section" id="contact">
         <div class="container">
             <h2>Hubungi Saya</h2>
             <form action="" method="post" class="contact-form">
@@ -65,6 +77,11 @@
     <footer>
         <p>&copy; 2026 Personal Brand. Dibuat di PPKD JP</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
