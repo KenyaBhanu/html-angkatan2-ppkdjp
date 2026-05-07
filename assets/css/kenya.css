@@ -92,3 +92,17 @@ body {
 .text-purple {
     color: purple;
 }
+
+.badge-green {
+    color: rgb(0, 128, 94);
+    background-color: rgb(227, 255, 247);
+}
+
+.badge-purple {
+    color: rgb(117, 0, 128);
+    background-color: rgb(250, 237, 252);
+}
+
+.border-left {
+    border-left: 8px solid #0d6efd;
+}
